@@ -7,7 +7,7 @@ import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
 import "./index.css";
-import Footer from "./Footer";
+
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);

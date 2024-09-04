@@ -1,27 +1,56 @@
-/* .sidebar {
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    border-right: 2px solid #e5e5e5;
-    z-index: 3;
+.layout {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
-  /* .sidebar {
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    border-right: 2px solid #e5e5e5;
-    z-index: 3;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar {
+    width: 250px;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.collapsed {
+    width: 50px;
+  }
+  
+  .logo-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    overflow-x: hidden; 
-    overflow-y: auto;   
-  } */
-
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .sidebar.collapsed .logo-container h1 {
+    display: none;
+  }
+  
+  .sidebar.collapsed .category,
+  .sidebar.collapsed .price,
+  .sidebar.collapsed .colors {
+    display: none;
+  }
+  
+  .content {
+    flex-grow: 1;
+    transition: width 0.3s ease;
+  }
+  
+  /* When sidebar is collapsed, content should take full width */
+  .layout.collapsed .content {
+    width: calc(100% - 50px);
+  }
+  
+  /* When sidebar is expanded, content should take the remaining width */
+  .layout .content {
+    width: calc(100% - 250px);
+  }
+  
   .sidebar {
     width: 15%;
     position: fixed;
@@ -63,15 +92,15 @@
   /* Mobile view */
   @media (max-width: 768px) {
     .sidebar {
-      width: 100%; /* Full width for mobile */
-      position: relative; /* Change position to relative for mobile */
-      height: auto; /* Adjust height for mobile */
-      border-right: none; /* Remove border-right for mobile */
-      border-bottom: 2px solid #e5e5e5; /* Add border-bottom for mobile */
+      width: 100%; 
+      position: relative;
+      height: auto; 
+      border-right: none; 
+      border-bottom: 2px solid #e5e5e5; 
     }
     
     .logo-container {
-      margin-bottom: 2rem; /* Adjust bottom margin for mobile */
+      margin-bottom: 2rem; 
     }
     
     .logo-container h1 {

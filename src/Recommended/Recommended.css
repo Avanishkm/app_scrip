@@ -1,12 +1,12 @@
 .recommended-flex {
     display: flex;
-    margin-left: 20rem;
+    margin-left: 22rem;
   }
   
   .recommended-title {
-    margin-left: 20rem;
+    margin-left: 22rem;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 100px;
     font-size: 20px;
   }
 
@@ -32,3 +32,7 @@
       margin-top: 15px;
     }
   }
+
+
+
+  

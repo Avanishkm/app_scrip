@@ -6,6 +6,11 @@ nav {
     padding: 20px;
     z-index: 999;
     margin-left: 2rem;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Positions the navbar at the top */
+    left: 0;
+    right: 0;
+    background-color: white; /* Ensures the navbar background is visible when scrolling */
   }
   
   input {
@@ -24,57 +29,48 @@ nav {
     height: 1.5rem;
     margin-left: 2rem;
   }
-
-  /* .nav-container {
-    padding: 10px; 
-  }
   
-  .profile-container {
-    display: flex;
-    gap: 10px; 
-  } */
-  
-
   /* Tablet view */
-@media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     nav {
-      padding: 15px; /* Adjust padding for tablet */
-      margin-left: 1rem; /* Adjust margin-left for tablet */
+      padding: 15px;
+      margin-left: 1rem;
     }
   
     input {
-      padding: 10px 15px; /* Adjust padding for tablet */
-      width: 12rem; /* Adjust width for tablet */
-      margin-right: 15px; /* Adjust margin-right for tablet */
+      padding: 10px 15px;
+      width: 12rem;
+      margin-right: 15px;
     }
   
     .nav-icons {
-      width: 1.2rem; /* Adjust icon size for tablet */
-      height: 1.2rem; /* Adjust icon size for tablet */
-      margin-left: 1rem; /* Adjust margin-left for tablet */
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-left: 1rem;
     }
   }
   
   /* Mobile view */
   @media (max-width: 768px) {
     nav {
-      flex-direction: column; /* Stack items vertically on mobile */
-      align-items: flex-start; /* Align items to the start for mobile */
-      padding: 10px; /* Adjust padding for mobile */
-      margin-left: 0; /* Remove margin-left for mobile */
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      margin-left: 0;
     }
   
     input {
-      padding: 8px 12px; /* Adjust padding for mobile */
-      width: 100%; /* Full width for mobile */
-      margin-right: 0; /* Remove margin-right for mobile */
-      margin-bottom: 10px; /* Add bottom margin for mobile */
+      padding: 8px 12px;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   
     .nav-icons {
-      width: 1rem; /* Adjust icon size for mobile */
-      height: 1rem; /* Adjust icon size for mobile */
-      margin-left: 0; /* Remove margin-left for mobile */
-      margin-bottom: 10px; /* Add bottom margin for mobile */
+      width: 1rem;
+      height: 1rem;
+      margin-left: 0;
+      margin-bottom: 10px;
     }
   }
+  

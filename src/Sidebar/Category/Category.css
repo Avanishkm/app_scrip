@@ -1,0 +1,117 @@
+.sidebar-title {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-items {
+    margin-top: 20px;
+  }
+  
+  .sidebar-label-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .sidebar-label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .all {
+    background: linear-gradient(blue, crimson);
+  }
+  
+  .sidebar-label-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .sidebar-label-container input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .sidebar-label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .sidebar-label-container .checkmark:after {
+    top: 6.4px;
+    left: 6.4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+  }
+  
+  .line {
+    margin-top: 3rem;
+    border-color: #f7f7f7;
+  }
+
+/* Tablet view */
+@media (max-width: 1024px) {
+    .sidebar-title {
+      font-size: 20px; /* Adjust font size for tablet */
+      margin-bottom: 15px; /* Adjust bottom margin for tablet */
+    }
+  
+    .sidebar-items {
+      margin-top: 15px; /* Adjust top margin for tablet */
+    }
+  
+    .sidebar-label-container {
+      padding-left: 30px; /* Adjust padding for tablet */
+      margin-bottom: 10px; /* Adjust bottom margin for tablet */
+    }
+  
+    .checkmark {
+      height: 18px; /* Adjust size for tablet */
+      width: 18px; /* Adjust size for tablet */
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .sidebar-title {
+      font-size: 18px; /* Adjust font size for mobile */
+      margin-bottom: 10px; /* Adjust bottom margin for mobile */
+    }
+  
+    .sidebar-items {
+      margin-top: 10px; /* Adjust top margin for mobile */
+    }
+  
+    .sidebar-label-container {
+      padding-left: 25px; /* Adjust padding for mobile */
+      margin-bottom: 8px; /* Adjust bottom margin for mobile */
+    }
+  
+    .checkmark {
+      height: 16px; /* Adjust size for mobile */
+      width: 16px; /* Adjust size for mobile */
+    }
+  }

@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .btns {
+    padding: 10px 20px;
+    margin-right: 6px;
+    background: transparent;
+    border: none;
+    border: 0.6px solid #ccc;
+    border-radius: 5px;
+    color: #323232;
+    cursor: pointer;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  /* Tablet view */
+@media (max-width: 1024px) {
+    .btns {
+      padding: 8px 16px; /* Adjust padding for tablet */
+      margin-right: 5px; /* Adjust margin for tablet */
+      font-size: 14px; /* Adjust font size for tablet */
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .btns {
+      padding: 6px 12px; /* Adjust padding for mobile */
+      margin-right: 4px; /* Adjust margin for mobile */
+      font-size: 12px; /* Adjust font size for mobile */
+    }
+  }
+
+  
+  /* #root button{
+    margin-left: 300px;
+  }
+   */

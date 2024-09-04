@@ -1,0 +1,80 @@
+nav {
+    display: flex;
+    border-bottom: 2px solid #f3f3f3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+    margin-left: 2rem;
+  }
+  
+  input {
+    padding: 12px 20px;
+    border: none;
+    background: #f7f6f6;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 14rem;
+  }
+  
+  .nav-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  /* .nav-container {
+    padding: 10px; 
+  }
+  
+  .profile-container {
+    display: flex;
+    gap: 10px; 
+  } */
+  
+
+  /* Tablet view */
+@media (max-width: 1024px) {
+    nav {
+      padding: 15px; /* Adjust padding for tablet */
+      margin-left: 1rem; /* Adjust margin-left for tablet */
+    }
+  
+    input {
+      padding: 10px 15px; /* Adjust padding for tablet */
+      width: 12rem; /* Adjust width for tablet */
+      margin-right: 15px; /* Adjust margin-right for tablet */
+    }
+  
+    .nav-icons {
+      width: 1.2rem; /* Adjust icon size for tablet */
+      height: 1.2rem; /* Adjust icon size for tablet */
+      margin-left: 1rem; /* Adjust margin-left for tablet */
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: flex-start; /* Align items to the start for mobile */
+      padding: 10px; /* Adjust padding for mobile */
+      margin-left: 0; /* Remove margin-left for mobile */
+    }
+  
+    input {
+      padding: 8px 12px; /* Adjust padding for mobile */
+      width: 100%; /* Full width for mobile */
+      margin-right: 0; /* Remove margin-right for mobile */
+      margin-bottom: 10px; /* Add bottom margin for mobile */
+    }
+  
+    .nav-icons {
+      width: 1rem; /* Adjust icon size for mobile */
+      height: 1rem; /* Adjust icon size for mobile */
+      margin-left: 0; /* Remove margin-left for mobile */
+      margin-bottom: 10px; /* Add bottom margin for mobile */
+    }
+  }
